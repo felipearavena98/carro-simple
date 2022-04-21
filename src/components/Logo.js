@@ -1,19 +1,20 @@
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 
 
-const styles = {
-    logo: {
-        fontWeight: '700',
-        fontSize: '2rem',
-    }
-}
+// const styles = {
+//     logo: {
+//         fontWeight: '700',
+//         fontSize: '2rem',
+//     }
+// }
 
 class Logo extends Component {
     render() {
         return (
-            <div style={ styles.logo}>
+            <Container >
                 Shop
-            </div>
+            </Container>
         )
     }
 }

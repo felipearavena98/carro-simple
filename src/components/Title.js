@@ -1,15 +1,10 @@
 import { Component } from "react";
 
-const styles = {
-    title: {
-        marginBotton: '30px',
-    }
-}
 
-class Title extends Component { 
+class Title extends Component {
     render() {
         return (
-            <h1 style={styles.title}>Tienda</h1>
+            <h1 className="mb-5">Tienda</h1>
         )
     }
 }

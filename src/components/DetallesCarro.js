@@ -1,5 +1,6 @@
 import { Component } from "react";
-import Producto from "./Producto";
+import { Container } from "react-bootstrap";
+// import Producto from "./Producto";
 
 
 const styles = {
@@ -34,11 +35,11 @@ class DetallesCarro extends Component {
     render() {
         const { carro } = this.props
         return (
-            <div style={styles.detallesCarro}>
-                <ul style={ styles.ul }>
-                    {carro.map(x => <li style={styles.producto}  key={x.name}><img style={styles.imagen} alt={x.name} src={x.img}/>{x.name}<span>{x.cantidad}</span> </li> )}
+            <Container style={styles.detallesCarro}>
+                <ul style={styles.ul}>
+                    {carro.map(x => <li style={styles.producto} key={x.name}><img style={styles.imagen} alt={x.name} src={x.img} />{x.name}<span>{x.cantidad}</span> </li>)}
                 </ul>
-            </div>
+            </Container>
         )
     }
 }
